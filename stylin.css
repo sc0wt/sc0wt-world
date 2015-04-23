@@ -29,8 +29,11 @@
 		
 	.projectlist {
 	
-		background: black;
-		font-size: 40px;			
+		font-size: 40px;
+		width: 100vw;
+		margin-top: 10vw;
+		overflow-y: scroll;
+		overflow-x: hidden;				
 		
 		}
 		
