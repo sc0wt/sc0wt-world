@@ -23,7 +23,9 @@
 	#myCanvas { display: none; }
 	.projectlist {
 		width: 100vw;
-		position: relative;			
+		position: relative;
+		left:0%;
+		top:10vw;			
 	}
 }
 
