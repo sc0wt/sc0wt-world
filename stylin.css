@@ -3,7 +3,7 @@
 	src: url('kamilla_preview.woff') format('woff');
 	
 	font-family:'Viktor';
-	src: url('viktor_preview.tt') format ('truetype');
+	src: url('viktor_preview.tt') format('truetype');
 }
 
 
@@ -22,9 +22,12 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#myCanvas { display: none; }
 	.projectlist {
-		width: 100vw;
-				
+		width: 100vw;			
 	}
+}
+
+#container {
+	width: 100vw;
 }
 
 h1 {
@@ -44,7 +47,7 @@ h1 {
 	width: 46vw;
 	padding: 30px;
 	font-family: "Kamilla", sans-serif;
-/*     letter-spacing: .05em; */
+    letter-spacing: .02em;
     /* line-height: 180%; */
     text-align: left;
     background-color: white;
@@ -111,7 +114,7 @@ span.stretch {
 	position: fixed;
 	top: 30px;
 	left: 30px;
-	color: white;
+	color: black;
 	text-align: center;
 	font-size: 80px;
 	line-height: 60px;
