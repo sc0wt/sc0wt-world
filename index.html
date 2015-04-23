@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tristan Scow</title>
+<link rel="stylesheet" type="text/css" href="stylin.css">
+<script type="text/javascript" src="js/paper-full.min.js"></script>
+<script type="text/paperscript" canvas="myCanvas">
+var mousePoint = view.center;
+var amount = 200;
+var colors = ['black', 'yellow', 'black', 'yellow'];
+
+for (var i = 0; i < amount; i++) {
+	var rect = new Rectangle([0, 0], [1, 1]);
+	rect.center = mousePoint;
+	var path = new Path.Rectangle(rect, 2);
+	path.fillColor = colors[i % 3];
+	var scale = (1 - i / amount) * 800;
+	path.scale(scale);
+}
+
+function onMouseMove(event) {
+	mousePoint = event.point;
+}
+
+var children = project.activeLayer.children;
+function onFrame(event) {
+	for (var i = 0, l = children.length; i < l; i++) {
+		var item = children[i];
+		var delta = (mousePoint - item.position) / (i + 8);
+		
+		if (delta.length > 0.1)
+			item.position += delta;
+	}
+}
+</script>
+</head>
+<body>   
+
+		<canvas id="myCanvas" resize></canvas>
+		
+		<div id="container">
+		
+			<div id="name">tristan<br>scow</div>
+		    
+	        <div class="projectlist">
+	            
+	          	<ul>
+	          	
+		        	<li><a class="gd" href="./agito.html">Graphic Design</a></li>
+		        	
+		        	
+		        	<li><a class="type" href="./type.html">Typography</a></li>
+		        	
+		        	
+		        	<li><a class="obj" href="./objects.html">Objects</a></li>
+	          	
+	          	</ul>
+	          	
+	          	<hr>
+	          	
+	          	<ul>
+	          	
+		        	<li>I've been an intern at<a href="http://mattermatters.com"> Matter</a> and <a href="http://soudasouda.com">Souda</a>.</li>
+	          	
+	          	</ul>
+	        	
+	            <hr>
+	            
+	            <ul>
+	            
+	            	<li><span class="stretch">PLEASE,</span><br>see <a href="http://bangbangboogie.tumblr.com">my blog</a>.</li>
+	            	
+	            </ul>
+	            
+				<hr>
+				
+				<ul>
+		        	<li><a href="mailto:tscow@mica.edu">email </a>me !</li>
+	        	
+		        	<li>310.630.7839</li>
+		        	
+				</ul>
+	        	
+	        </div>
+
+		</div>
+
+</body>      
+</html>​

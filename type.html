@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tristan Scow - Typography</title>
+<link rel="stylesheet" type="text/css" href="stylin.css">
+</head>
+
+<body style="background-color:rgb(5,5,45)">
+
+	<div id="name"><a href="index.html">back</a></div>
+
+	<div align="center" ID="container">
+	
+		<div id="textbox">
+			Jim quickly realized that the beautiful gowns are expensive.
+			
+			<button class="typetoggle">&#10555;</button>
+			
+			More info soon !
+		</div>
+		
+		
+	</div>
+
+</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery.fittext.js"></script>
+	<script>
+		jQuery("#textbox").fitText();
+	</script>
+	<script>
+	
+	$('.typetoggle').on('click', function(){
+			$('#textbox').toggleClass('viktor');
+		});
+
+	</script>
+
+
+</html>
