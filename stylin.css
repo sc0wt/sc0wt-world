@@ -1,9 +1,9 @@
 @font-face {
-	font-family:'Kamilla'
-	src: url('kamilla_preview.woff')
+	font-family:'Kamilla';
+	src: url('kamilla_preview.woff') format('woff');
 	
-	font-family:'Viktor'
-	src: url('viktor_preview.tt')
+	font-family:'Viktor';
+	src: url('viktor_preview.tt') format ('truetype');
 }
 
 
@@ -21,6 +21,10 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#myCanvas { display: none; }
+	.projectlist {
+		width: 100vw;
+				
+	}
 }
 
 h1 {
@@ -39,7 +43,7 @@ h1 {
 	top: 0%;
 	width: 46vw;
 	padding: 30px;
-	font-family: "Kamilla";
+	font-family: "Kamilla", sans-serif;
 /*     letter-spacing: .05em; */
     /* line-height: 180%; */
     text-align: left;
