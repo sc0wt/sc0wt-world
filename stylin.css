@@ -22,10 +22,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	#myCanvas { display: none; }
 	.projectlist {
-		width: 100vw;
-		position: relative;
-		left:0%;
-		top:10vw;			
+		background: black;			
 	}
 }
 
@@ -109,7 +106,7 @@ span.stretch {
     margin-left: auto;
     margin-right: auto;
     letter-spacing: .25em;
-    font-family: "onyx";
+    font-family: Onyx;
 }
     
 
