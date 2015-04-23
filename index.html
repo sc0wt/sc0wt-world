@@ -8,14 +8,14 @@
 <script type="text/paperscript" canvas="myCanvas">
 var mousePoint = view.center;
 var amount = 200;
-var colors = ['rgb(5,5,45)', 'yellow', 'rgb(5,5,45)', 'yellow'];
+var colors = ['rgb(5,5,45)', 'rgb(240,240,240)'];
 
 for (var i = 0; i < amount; i++) {
-	var rect = new Rectangle([0, 0], [1, 1]);
+	var rect = new Rectangle([0, 0], [10, 10]);
 	rect.center = mousePoint;
-	var path = new Path.Rectangle(rect, 2);
-	path.fillColor = colors[i % 3];
-	var scale = (1 - i / amount) * 1000;
+	var path = new Path.Rectangle(rect, 6);
+	path.fillColor = colors[i % 2];
+	var scale = (1 - i / amount) * 100;
 	path.scale(scale);
 }
 

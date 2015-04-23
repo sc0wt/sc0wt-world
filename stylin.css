@@ -18,10 +18,10 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgb(5,5,45);
+	background: rgb(240,150,0);
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 568px) {
 		
 	#myCanvas {
 		
@@ -88,7 +88,7 @@ h1 {
 .projectlist hr {
 	border: 0px;
 	height: 0px;
-	box-shadow: 0 0 5px 2.5px rgb(5,5,45);
+	box-shadow: 0 0 5px 2.5px rgb(240,150,0);
 }    
 
 .projectlist a {
@@ -144,9 +144,9 @@ span.stretch {
 	left: 30px;
 	color: black;
 	text-align: center;
-	font-size: 80px;
-	line-height: 60px;
-	font-family: Kamilla;
+	font-size: 40px;
+	line-height: 30px;
+	font-family: Kamilla, sans-serif;
 	-webkit-transition: letter-spacing 1.5s;
 }
 
@@ -169,7 +169,7 @@ span.stretch {
 	width: 80%;
 	position: absolute;
 	right:0%;
-	color: white;
+	color: rgb(5,5,45);
 	font-family: Kamilla;
 	padding: 30px;
 	text-align: center;
