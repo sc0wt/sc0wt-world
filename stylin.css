@@ -71,20 +71,24 @@ h1 {
 	     	1px 1px 0 rgb(255,0,0);
     }
  
- @media only screen and (min-device-width: 600px) {
+
+.projectlist {
+	
+	font-family: Kamilla, sans-serif;
+	padding: 30px;
+	letter-spacing: .02em;
+	text-align: left;
+	background-color: rgb(240,240,240);
+    color: rgb(0,0,40);
+}
+
+@media only screen and (min-device-width: 600px) {
     
 .projectlist {
 	position: absolute;
 	right: 0%;
 	top: 0%;
 	width: 46vw;
-	padding: 30px;
-	font-family: Kamilla, sans-serif;
-    letter-spacing: .02em;
-    /* line-height: 180%; */
-    text-align: left;
-    background-color: rgb(240,240,240);
-    color: rgb(0,0,40);
     font-size: 80px;
     }
     
