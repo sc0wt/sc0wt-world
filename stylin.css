@@ -23,7 +23,7 @@
 		
 	#myCanvas {
 		
-		display: none;
+		display: none !important;
 		
 		}
 		
@@ -34,8 +34,10 @@
 		margin-top: 10vw;
 		overflow-y: scroll;
 		overflow-x: hidden;				
-		
+		line-height: 50px;
 		}
+		
+		
 		
 }
 
