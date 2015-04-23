@@ -37,6 +37,10 @@
 		
 		}
 		
+	.projectlist a {
+		text-decoration: none;
+	}
+		
 	#name {
 		
 		font-size: 40px;
