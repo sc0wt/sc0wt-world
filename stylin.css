@@ -70,6 +70,8 @@ h1 {
 	     	-1px 1px 0 rgb(255,190,0),
 	     	1px 1px 0 rgb(255,0,0);
     }
+ 
+ @media only screen and (min-device-width: 600px) {
     
 .projectlist {
 	position: absolute;
@@ -85,6 +87,8 @@ h1 {
     color: rgb(0,0,40);
     font-size: 80px;
     }
+    
+   } 
     
 .projectlist hr {
 	border: 0px;
