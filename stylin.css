@@ -1,7 +1,9 @@
 @font-face {
 	font-family:'Kamilla';
 	src: url('kamilla_preview.woff') format('woff');
-	
+}
+
+@font-face {
 	font-family:'Viktor';
 	src: url('Viktor_preview.ttf') format('truetype');
 }
