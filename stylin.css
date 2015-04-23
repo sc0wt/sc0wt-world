@@ -3,7 +3,7 @@
 	src: url('kamilla_preview.woff') format('woff');
 	
 	font-family:'Viktor';
-	src: url('viktor_preview.tt') format('truetype');
+	src: url('Viktor_preview.ttf') format('truetype');
 }
 
 
@@ -19,12 +19,15 @@
 	background: rgb(5,5,45);
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+@media screen and (min-device-width: 320px) and (max-device-width: 568px)
 		and (-webkit-min-device-pixel-ratio: 2) {
-	#myCanvas { display: none; }
+	#myCanvas { display: none;
+		}
+		
 	.projectlist {
-		background: black;			
-	}
+		background: black;
+		font-size: 40px;			
+		}
 }
 
 #container {
