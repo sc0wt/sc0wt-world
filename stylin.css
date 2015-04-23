@@ -31,12 +31,13 @@
 		
 	.projectlist {
 	
-		font-size: 40px;
+		font-size: 60px;
 		width: 100%;
 		margin-top: 200px;				
-		line-height: 50px;
+		line-height: 70px;
 		display: block;
 		z-index: 99999;
+		font-family: Kamilla, sans-serif;
 		
 		}
 		
