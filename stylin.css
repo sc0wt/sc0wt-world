@@ -220,3 +220,23 @@ img.double {
 	height: auto;
 	padding: 30px;
 }
+
+a.studio {
+	font-family: Kamilla;
+	text-align: center;
+	font-size: 6em;
+	text-decoration: none;
+	margin-left: 110px;
+}
+
+a.studio:hover {
+	color: white;
+}
+
+a.studio:active {
+	color: black;
+}
+
+a.studio:visited {
+	color: black;
+}
