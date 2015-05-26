@@ -45,6 +45,8 @@
 		text-decoration: none;
 		}
 		
+		
+		
 	#name {
 		
 		font-size: 5em;
@@ -83,6 +85,33 @@ h1 {
     color: rgb(0,0,40);
 }
 
+.projectlist a {
+		text-decoration: none;
+		}
+
+.projectlist a:hover {
+		color: rgb(240,150,0);
+		}
+
+.projdescription {
+	font-family: Viktor;
+	color: rgb(5,5,45);
+	font-size: 2.5em;
+	float: right;
+	margin-left: 30%;
+	margin-bottom: 50px;
+	margin-top: 10px;
+}
+
+.projdescription a {
+	text-decoration: none;
+	color: rgb(5,5,45);
+}
+
+.projdescription a:hover {
+	color: rgb(240,150,0)
+}
+
 @media only screen and (min-device-width: 600px) {
     
 .projectlist {
@@ -90,7 +119,7 @@ h1 {
 	right: 0%;
 	top: 0%;
 	width: 46vw;
-    font-size: 6em;
+    font-size: 5em;
     }
     
    } 
@@ -185,6 +214,11 @@ span.stretch {
 	text-align: center;
 }
 
+#textbox a {
+	text-decoration: none;
+	color: rgb(5,5,45);
+}
+
 #textbox.viktor {
 	font-family: Viktor;
 }
@@ -200,6 +234,7 @@ span.stretch {
 	appearance: none;
 	border: none;
 	background: rgb(5,5,45);
+	font-family: Kamilla;
 }
 
 .typetoggle:focus {
