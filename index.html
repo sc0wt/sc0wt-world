@@ -8,13 +8,13 @@
 <script type="text/paperscript" canvas="myCanvas">
 var mousePoint = view.center;
 var amount = 200;
-var colors = ['rgb(5,5,45)', 'rgb(240,240,240)'];
+var colors = ['rgb(0,100,190)', 'rgb(240,240,240)'];
 
 for (var i = 0; i < amount; i++) {
-	var rect = new Rectangle([0, 0], [10, 10]);
+	var rect = new Rectangle([0, 0], [8, 8]);
 	rect.center = mousePoint;
 	var path = new Path.Rectangle(rect, 6);
-	path.fillColor = colors[i % 2];
+	path.fillColor = colors[i % 6];
 	var scale = (1 - i / amount) * 100;
 	path.scale(scale);
 }
@@ -47,13 +47,15 @@ function onFrame(event) {
 	            
 	          	<ul>
 	          	
-		        	<li><a href="./agito.html">Graphic Design</a></li>
+	          		<li>A selection of<a href="./objects.html"> objects</a> for a collaborative design studio.</li>
+	          		
+		        	<li>Branding and graphics for a <a href="./agito.html">biking infrastructure improvement program</a> in Baltimore.</li>
 		        	
 		        	
-		        	<li><a href="./type.html">Typography</a></li>
+		        	<li>Two <a href="./type.html">typefaces</a> exploring extremes in weight.</li>
 		        	
 		        	
-		        	<li><a href="./objects.html">Objects</a></li>
+		        	
 	          	
 	          	</ul>
 	          	
@@ -69,14 +71,17 @@ function onFrame(event) {
 	            
 	            <ul>
 	            
-	            	<li>Please visit<br> <a href="http://bangbangboogie.tumblr.com">my blog</a>.</li>
+	            	<li>To see more work in progress, visit<br> <a href="http://bangbangboogie.tumblr.com">my blog</a>.</li>
 	            	
 	            </ul>
 	            
 				<hr>
 				
-				<ul>
-		        	<li><a href="mailto:tscow@mica.edu">email </a>me !</li>
+				<ul class="contact">
+				
+					<li>currently based in Berlin</li>
+					
+		        	<li>tristanscow@gmail.com</li>
 	        	
 		        	<li>310.630.7839</li>
 		        	
