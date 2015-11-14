@@ -51,6 +51,11 @@
 		
 		font-size: 5em;
 		line-height: 4em;
+		
+	#container {
+		
+		z-index: -1;
+	}
 	
 	}	
 	
