@@ -1,0 +1,187 @@
+@font-face {
+	font-family:'Kamilla';
+	src: url('kamilla_preview.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Viktor';
+	src: url('Viktor_preview.ttf') format('truetype');
+}
+
+#screen {
+	width: 100vw;
+	height: 1400px;
+	position: absolute;
+	top:0;
+	z-index: -1;
+	/* background: white; */
+	-webkit-animation-name: bg;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+}
+/*
+
+@-webkit-keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+*/
+
+
+@-webkit-keyframes bg {
+    0% {background-color: : white; }
+    100% {background-color: black; }
+}
+
+
+#twofer {
+	background: repeating-radial-gradient(10% 9%, black, rgba(30,30,30,1) 10%, rgba(40,40,40,0) 15%);
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+#container {
+	width: 100vw;
+	color: rgb(12,36,31);
+	padding: 0px;
+	font-size: 1em;
+	font-family: 'karla', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .15em;
+	-webkit-animation-name: bg;
+	-webkit-animation-duration: 8s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+}
+	
+
+
+body {
+	margin:0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.contact {
+	padding-bottom: 80px;
+}
+
+.feed {
+	max-width: 80vw;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.feed img {
+	display: block;
+	max-width: 45em;
+	padding-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feed img:last-child {
+	padding-bottom: 80px;
+}
+
+
+a{
+	text-decoration: none;
+	color: rgb(12,36,31);
+	-webkit-transform: rotate(90deg);
+}
+
+a:visited {
+	text-shadow: 0 0 3px black;
+	text-decoration:underline;
+}
+
+a:hover {	
+	text-decoration: underline;
+	text-shadow: 0 0 3px black;
+	color: rgb(12,36,31);
+	-webkit-transform: rotate(-90deg);
+	
+}
+
+ul {
+	/* text-align: center; */
+	list-style: none;
+	margin: 0px 0px 0px 0px;
+	font-size: 1.5em;
+	
+}
+
+ul.projectlist {
+	text-align: left;
+}
+
+
+li {
+	padding: 10px 0 0 10px;
+	line-height: 3em;
+}
+
+li:first-child {
+	padding-top: 80px;
+}
+
+hr {
+	
+	border: 0;
+	height: 0;
+	box-shadow: 0px 0px 10px 3px;
+	color: rgb(80,80,80);
+	margin: 30px 30px 0px 0px;
+}
+
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+#textbox {
+	/* background: white; */
+	width: 80%;
+	margin-left: 10%;
+	/* position: absolute; */
+	right:0%;
+	color: rgb(5,5,45);
+	font-family: Kamilla;
+	padding: 100px 0 80px 0;
+	text-align: center;
+}
+
+#textbox a {
+	text-decoration: none;
+	color: rgb(5,5,45);
+}
+
+#textbox.viktor {
+	font-family: Viktor;
+}
+
+.typetoggle {
+	color: white;
+	font-size: .5em;
+	display: block;
+	padding: 30px;
+	border-radius: 30px;
+	margin: 80px auto 0 auto;
+	box-shadow: none;
+	appearance: none;
+	border: none;
+	background: rgb(5,5,45);
+	font-family: Kamilla;
+}
+
+.typetoggle:focus {
+	box-shadow: none;
+	background: rgb(5,5,45);
+	appearance: none;
+	border: none;
+}
